@@ -1,7 +1,6 @@
 distance = 0
 energy = 0
 
-
 while (true)
   puts "Would you like to walk or run?"
   input = gets.chomp
@@ -9,6 +8,10 @@ while (true)
       distance+=1
       energy+=1
       puts "Your distance is #{distance} and energy is #{energy}"
+
+    elsif (energy <= 0)
+        puts "Go home"
+        break
 
     elsif (input=="run")
       distance+=5
